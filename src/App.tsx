@@ -19,7 +19,8 @@ function App() {
     return () => controller.abort('stopping');
   }, [setSensors])
 
-
+  // Sensor Data is available from the /api/readings api, it takes a sensorId (string) and optional to and from parameters (iso date strings)
+  // Sensor Data is returned as { readings: {timestamp: ISO Date, temperature: number }[] }
 
   return (
     <>
